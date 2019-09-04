@@ -303,10 +303,10 @@ width: 90%;
   <!--<img id="zb" src="./img/zb.png">-->
 </div>
 
-<div id="zuan1" class="animated zoomIn fadeIn" style="display: block">
+<div id="zuan1" class=" zoomIn fadeIn slower" style="display: none">
   <img id="zuanshi1" src="./img/zuan1.png">
 </div>
-<div id="zuan2" class="animated zoomIn fadeIn" style="display: block" >
+<div id="zuan2" class=" zoomIn fadeIn slower" style="display: none" >
   <img id="zuanshi2" src="./img/zuan2.png" >
 </div>
 </body>
@@ -422,16 +422,36 @@ width: 90%;
     $(document).ready(function () {
 // $("#zuan1").fadeIn(3000,"swing");
 // $("#zuan2").fadeIn(5000,"swing");
-        star1_fadein();
+        setTimeout("star1_fadein()",1000) ;
+        setTimeout("star2_fadein()",4000) ;
+       setTimeout("startanimated()",4000);
     })
 
+    function startanimated() {
+
+        $("#zuan1").addClass("animated");
+        $("#zuan2").addClass("animated");
+        $("#zuan1").show();
+        $("#zuan2").show();
+    }
+    
   function star1_fadein() {
-      $("#star-left").fadeIn(3000,"swing",star1_fadeout)
-      $("#star2").fadeIn(3000,"swing",star1_fadeout)
+      $("#star-left").fadeIn(6000,"swing",star1_fadeout)
+      // $("#star2").fadeIn(6000,"swing",star1_fadeout)
   }
 function star1_fadeout() {
-    $("#star-left").fadeOut(3000,"swing",star1_fadein)
-    $("#star2").fadeOut(3000,"swing",star1_fadein)
+    $("#star-left").fadeOut(6000,"swing",star1_fadein)
+    // $("#star2").fadeOut(6000,"swing",)
 }
+
+    function star2_fadein() {
+        // $("#star-left").fadeIn(6000,"swing")
+        $("#star2").fadeIn(6000,"swing",star2_fadeout)
+    }
+    function star2_fadeout() {
+        // $("#star-left").fadeOut(6000,"swing")
+        $("#star2").fadeOut(6000,"swing",star2_fadein)
+    }
+
 </script>
 </html>
