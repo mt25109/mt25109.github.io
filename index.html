@@ -289,7 +289,7 @@ width: 90%;
   <span>
     18k金钻石耳钉&nbsp;&nbsp;星冉
   </span>
-  <img src="./img/wxx.png" style="
+  <img id="star2" src="./img/wxx.png" style="
     position: absolute;
     top: 0;
     left: 14%;
@@ -310,7 +310,7 @@ width: 90%;
   <img id="zuanshi2" src="./img/zuan2.png" >
 </div>
 </body>
-<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script >
     "use strict";
 
@@ -427,9 +427,11 @@ width: 90%;
 
   function star1_fadein() {
       $("#star-left").fadeIn(3000,"swing",star1_fadeout)
+      $("#star2").fadeIn(3000,"swing",star1_fadeout)
   }
 function star1_fadeout() {
     $("#star-left").fadeOut(3000,"swing",star1_fadein)
+    $("#star2").fadeOut(3000,"swing",star1_fadein)
 }
 </script>
 </html>
