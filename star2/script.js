@@ -11,8 +11,10 @@
 		background = document.getElementById("canvas"),
 		terCtx = terrain.getContext("2d"),
 		bgCtx = background.getContext("2d"),
-		width = window.innerWidth,
-		height = document.body.offsetHeight;
+		// width = window.innerWidth,
+		// height = document.body.offsetHeight;
+	width = window.innerWidth-20,
+		height = 2912;
     (height < 400)?height = 400:height;
 
 	terrain.width = background.width = width;
