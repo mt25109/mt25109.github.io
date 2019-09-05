@@ -179,14 +179,14 @@
             /*width: 405px;*/
             height: 254px;
             top: 21%;
-            left: 40%;
+            left: 33%;
             right: 0;
             color: #FFF;
             line-height: 80px;
             text-align: center;
             /*font-family: "lato", sans-serif;*/
             font-weight: 300;
-            font-size: 45px;
+            font-size: 34px;
             letter-spacing: 10px;
             /*margin-top: -60px;*/
             padding-left: 10px;
@@ -225,7 +225,7 @@
             width: 90%;
             /*width: 1125px;*/
             /*height: 1065px;*/
-            top: 38%;
+            top: 40%;
             left: 0;
             right: 0;
             color: #FFF;
@@ -246,7 +246,7 @@
             margin: 0 auto;
             /*width: 1125px;*/
             /*height: 1065px;*/
-            top: 37%;
+            top: 39%;
             left: 0;
             right: 0;
             color: #FFF;
@@ -265,7 +265,7 @@
             width: 95%;
             /*width: 1125px;*/
             /*height: 1065px;*/
-            top: 37.5%;
+            top: 39.5%;
             left: 0;
             right: 0;
             color: #FFF;
@@ -308,6 +308,8 @@
     /*bottom: 220px;*/
     bottom: 50px;
     width: 100%;
+    letter-spacing:8px;
+    color:#333333;
 }
         img {
             width: 100%;
@@ -329,12 +331,12 @@
         }
     </style>
 </head>
-<body style="padding: 10px">
-<div id="t1" style="text-align: left;font-size:35px;display: block;"><span style="font-weight: bold;font-size: 50px">
+<body style="padding: 40px">
+<div id="t1" style="text-align: left;font-size:35px;display: block; padding: 40px;line-height: 60px"><span style="font-weight: bold;font-size: 58px">
   新品上市|许愿星降临,请查收这份幸运
 </span>
     <br>
-    <span style="color: #0a6ebd;display: inline-block;margin-right: 10px">千叶珠宝</span><span>1周前</span>
+    <span style="color: #0a6ebd;display: inline-block;margin-right: 10px">千叶珠宝</span><span>&nbsp; 1周前</span>
 </div>
 
 
@@ -370,7 +372,7 @@
     </div>
     <div id="title2">
 
-  <span class="f3" style="display: inline-block;margin-top: 100px">
+  <span class="f3" style="display: inline-block;margin-top: 100px;font-size: 45px">
     星扉系列
   </span>
         <br>
@@ -379,8 +381,8 @@
   </span>
         <img id="star2" src="./img/wxx.png" style="
     position: absolute;
-    top: 0;
-    left: 14%;
+    top: -6px;
+    left: 10%;
     text-align: center;
     margin: 0 auto;
         width: 71%;
@@ -398,7 +400,7 @@
         <img id="zuanshi2" src="./img/zuan2.png">
     </div>
     <div id="cloud-pic" style="">
-        <img id="cloud-2" src="./img/yun.png">
+        <img id="cloud-2" src="./img/yun.png" style="height: 104%">
     </div>
     <div id="star-pic">
         <img id="star-2" src="./img/bbg.png">
@@ -419,25 +421,25 @@
     <!--<img src="./img/list/_1_01.jpg">-->
 <!--</div>-->
 <div class="w100" style="margin-top: -6px">
-    <img src="./img/list/_1_02.jpg">
+    <img src="./img/_1_02.jpg">
 </div>
 <div class="w100" style="margin-top: -6px">
-    <img src="./img/list/_1_03.jpg">
+    <img src="./img/_1_03.jpg">
 </div>
 <div class="w100" style="margin-top: -6px">
-    <img src="./img/list/_1_04.jpg">
+    <img src="./img/_1_04.jpg">
 </div>
 <div class="w100" style="margin-top: -6px">
-    <img src="./img/list/_1_05.jpg">
+    <img src="./img/_1_05.jpg">
 </div>
 <div class="w100" style="margin-top: -6px">
-    <img src="./img/list/_1_06.jpg">
+    <img src="./img/_1_06.jpg">
 </div>
 <div class="w100" style="margin-top: -6px">
-    <img src="./img/list/_1_07.jpg">
+    <img src="./img/_1_07.jpg">
 </div>
 <div class="w100" style="margin-top: -6px">
-    <img src="./img/list/_1_08.png">
+    <img src="./img/_1_08.png">
 </div>
 </body>
 <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
@@ -448,14 +450,14 @@
         ctx = canvas.getContext('2d'),
         t1 = document.getElementById("t1"),
         t1h = t1.clientHeight || t1.offsetHeight,
-        w = canvas.width = window.innerWidth - 20,
+        w = canvas.width = window.innerWidth - 80,
         // h = canvas.height = window.innerHeight-t1h-10,
-        h = canvas.height = 2912,
+        h = canvas.height = 2900,
         bg1 = document.getElementById("lamp"),
         hue = 217,
         stars = [],
         count = 0,
-        maxStars = 1400;
+        maxStars = 3000;
 
 
     bg1.setAttribute("height", t1h);
