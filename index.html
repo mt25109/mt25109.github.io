@@ -1,297 +1,383 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>千叶珠宝</title>
-  <!--<link rel="stylesheet" href="./style.css">-->
-  <link rel="stylesheet" href="./animate.css">
-  <style>
-    /* ==============================================================================================
-SED Innovations
-https://sed.am
-https://mkrtchyan.ga
-================================================================================================= */
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color:rgba(33, 33, 33, 0.9);
-      color:#ffffff;
-      display:block;
-      font: 14px/1.3 Arial,sans-serif;
-      height:50px;
-      position:relative;
-      z-index:5;
-    }
-    h2{
-      margin-top: 30px;
-      text-align: center;
-    }
-    header h2{
-      font-size: 22px;
-      margin: 0 auto;
-      padding: 10px 0;
-      width: 80%;
-      text-align: center;
-    }
-    header a, a:visited {
-      text-decoration:none;
-      color:#fcfcfc;
-    }
+    <meta charset="UTF-8">
+    <title>千叶珠宝</title>
+    <!--<link rel="stylesheet" href="./style.css">-->
+    <link rel="stylesheet" href="./animate.css">
+    <style>
+        /* ==============================================================================================
+    SED Innovations
+    https://sed.am
+    https://mkrtchyan.ga
+    ================================================================================================= */
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-    @keyframes move-twink-back {
-      from {background-position:0 0;}
-      to {background-position:-10000px 5000px;}
-    }
-    @-webkit-keyframes move-twink-back {
-      from {background-position:0 0;}
-      to {background-position:-10000px 5000px;}
-    }
-    @-moz-keyframes move-twink-back {
-      from {background-position:0 0;}
-      to {background-position:-10000px 5000px;}
-    }
-    @-ms-keyframes move-twink-back {
-      from {background-position:0 0;}
-      to {background-position:-10000px 5000px;}
-    }
+        header {
+            background-color: rgba(33, 33, 33, 0.9);
+            color: #ffffff;
+            display: block;
+            font: 14px/1.3 Arial, sans-serif;
+            height: 50px;
+            position: relative;
+            z-index: 5;
+        }
 
-    @keyframes move-clouds-back {
-      from {background-position:0 0;}
-      to {background-position:10000px 0;}
-    }
-    @-webkit-keyframes move-clouds-back {
-      from {background-position:0 0;}
-      to {background-position:10000px 0;}
-    }
-    @-moz-keyframes move-clouds-back {
-      from {background-position:0 0;}
-      to {background-position:10000px 0;}
-    }
-    @-ms-keyframes move-clouds-back {
-      from {background-position: 0;}
-      to {background-position:10000px 0;}
-    }
+        h2 {
+            margin-top: 30px;
+            text-align: center;
+        }
 
-    .stars, .twinkling, .clouds {
-      position:absolute;
-      top:0;
-      left:0;
-      right:0;
-      bottom:0;
-      width:100%;
-      height:100%;
-      display:block;
-    }
+        header h2 {
+            font-size: 22px;
+            margin: 0 auto;
+            padding: 10px 0;
+            width: 80%;
+            text-align: center;
+        }
 
-    .stars {
-      background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-      z-index:-2;
-    }
+        header a, a:visited {
+            text-decoration: none;
+            color: #fcfcfc;
+        }
 
-    .twinkling{
-      background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-      z-index:-1;
+        @keyframes move-twink-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -10000px 5000px;
+            }
+        }
 
-      -moz-animation:move-twink-back 200s linear infinite;
-      -ms-animation:move-twink-back 200s linear infinite;
-      -o-animation:move-twink-back 200s linear infinite;
-      -webkit-animation:move-twink-back 200s linear infinite;
-      animation:move-twink-back 200s linear infinite;
-    }
+        @-webkit-keyframes move-twink-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -10000px 5000px;
+            }
+        }
 
-    .clouds{
-      top:66%;
-      height: auto;
-      /*background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;*/
-      background:transparent url(./img/cloud.png) repeat-x top center;
-      z-index:3;
+        @-moz-keyframes move-twink-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -10000px 5000px;
+            }
+        }
 
-      -moz-animation:move-clouds-back 200s linear infinite;
-      -ms-animation:move-clouds-back 200s linear infinite;
-      -o-animation:move-clouds-back 200s linear infinite;
-      -webkit-animation:move-clouds-back 200s linear infinite;
-      animation:move-clouds-back 200s linear infinite;
-    }
+        @-ms-keyframes move-twink-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -10000px 5000px;
+            }
+        }
+
+        @keyframes move-clouds-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 10000px 0;
+            }
+        }
+
+        @-webkit-keyframes move-clouds-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 10000px 0;
+            }
+        }
+
+        @-moz-keyframes move-clouds-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 10000px 0;
+            }
+        }
+
+        @-ms-keyframes move-clouds-back {
+            from {
+                background-position: 0;
+            }
+            to {
+                background-position: 10000px 0;
+            }
+        }
+
+        .stars, .twinkling, .clouds {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .stars {
+            background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+            z-index: -2;
+        }
+
+        .twinkling {
+            background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+            z-index: -1;
+
+            -moz-animation: move-twink-back 200s linear infinite;
+            -ms-animation: move-twink-back 200s linear infinite;
+            -o-animation: move-twink-back 200s linear infinite;
+            -webkit-animation: move-twink-back 200s linear infinite;
+            animation: move-twink-back 200s linear infinite;
+        }
+
+        .clouds {
+            top: 47%;
+            height: auto;
+            /*background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;*/
+            background: transparent url(./img/cloud.png) repeat-x top center;
+            z-index: 3;
+
+            -moz-animation: move-clouds-back 200s linear infinite;
+            -ms-animation: move-clouds-back 200s linear infinite;
+            -o-animation: move-clouds-back 200s linear infinite;
+            -webkit-animation: move-clouds-back 200s linear infinite;
+            animation: move-clouds-back 200s linear infinite;
+        }
+
+        #title {
+            position: absolute;
+            top: 13%;
+            line-height: 90px;
+            left: 0;
+            right: 0;
+            color: #FFF;
+            text-align: center;
+            /*font-family: "lato", sans-serif;*/
+            font-weight: 300;
+            font-size: 45px;
+            letter-spacing: 10px;
+            margin-top: -60px;
+            padding-left: 10px;
+            z-index: 10;
+        }
+
+        #title2 {
+            position: absolute;
+            /*width: 405px;*/
+            height: 254px;
+            top: 21%;
+            left: 40%;
+            right: 0;
+            color: #FFF;
+            line-height: 80px;
+            text-align: center;
+            /*font-family: "lato", sans-serif;*/
+            font-weight: 300;
+            font-size: 45px;
+            letter-spacing: 10px;
+            /*margin-top: -60px;*/
+            padding-left: 10px;
+            z-index: 10;
+            /*background: url("./img/wxx.png") no-repeat center center;*/
+        }
+
+        .star-left {
+            position: absolute;
+            width: 16%;
+            /* width: 1125px; */
+            /* height: 1065px; */
+            top: 6%;
+            left: 10%; /*right: 0;*/
+            color: #FFF;
+            text-align: center;
+            /*!*font-family: "lato", sans-serif;*!*/
+            /*font-weight: 300;*/
+            /*font-size: 45px;*/
+            /*letter-spacing: 10px;*/
+            /*margin: -60px auto 0;*/
+            /*padding-left: 10px;*/
+            z-index: 10;
+            /*background: url("./img/zb.png") no-repeat center center;*/
+        }
+
+        #star-left {
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.9;
+            filter: alpha(opacity=90); /* 针对 IE8 以及更早的版本 */
+        }
+
+        #pic1 {
+            position: absolute;
+            width: 90%;
+            /*width: 1125px;*/
+            /*height: 1065px;*/
+            top: 38%;
+            left: 0;
+            right: 0;
+            color: #FFF;
+            text-align: center;
+            /*font-family: "lato", sans-serif;*/
+            font-weight: 300;
+            font-size: 45px;
+            letter-spacing: 10px;
+            margin: -60px auto 0;
+            padding-left: 10px;
+            z-index: 1;
+            /*background: url("./img/zb.png") no-repeat center center;*/
+        }
+
+        #zuan1 {
+            position: absolute;
+            width: 95%;
+            margin: 0 auto;
+            /*width: 1125px;*/
+            /*height: 1065px;*/
+            top: 37%;
+            left: 0;
+            right: 0;
+            color: #FFF;
+            text-align: center;
+            /*font-family: "lato", sans-serif;*/
+            font-weight: 300;
+            font-size: 45px;
+            letter-spacing: 10px;
+            margin-top: -60px;
+            padding-left: 10px;
+            z-index: 10;
+        }
+
+        #zuan2 {
+            position: absolute;
+            width: 95%;
+            /*width: 1125px;*/
+            /*height: 1065px;*/
+            top: 37.5%;
+            left: 0;
+            right: 0;
+            color: #FFF;
+            text-align: center;
+            /*font-family: "lato", sans-serif;*/
+            font-weight: 300;
+            font-size: 45px;
+            letter-spacing: 10px;
+            margin-top: -60px;
+            padding-left: 10px;
+            z-index: 10;
+        }
+
+        #cloud-pic {
+            position: absolute;
+            bottom: 0px;
+            width: 101%;
+            left: -2px;
+            height: 798px;
+            /*display: none;*/
+
+            animation: heart 8.3s ease-in-out 9.7s infinite alternate;
+
+        }
+        @keyframes heart{
+            from{transform:translate(0,0)}
+            to{transform:translate(0,20px)}
+        }
 
 
-    #title{
-      position: absolute;
-      top: 26%;
-      line-height: 90px;
-      left: 0;
-      right: 0;
-      color: #FFF;
-      text-align: center;
-      /*font-family: "lato", sans-serif;*/
-      font-weight: 300;
-      font-size: 45px;
-      letter-spacing: 10px;
-      margin-top: -60px;
-      padding-left: 10px;
-      z-index: 10;
-    }
-    #title2{
-      position: absolute;
-      /*width: 405px;*/
-      height: 254px;
-      top: 42%;
-      left: 40%;
-      right: 0;
-      color: #FFF;
-      line-height: 80px;
-      text-align: center;
-      /*font-family: "lato", sans-serif;*/
-      font-weight: 300;
-      font-size: 45px;
-      letter-spacing: 10px;
-      /*margin-top: -60px;*/
-      padding-left: 10px;
-      z-index: 10;
-      /*background: url("./img/wxx.png") no-repeat center center;*/
-    }
-    .star-left{
-      position: absolute;
-      width: 16%;
-      /* width: 1125px; */
-      /* height: 1065px; */
-      top: 6%;
-      left: 10%;      /*right: 0;*/
-      color: #FFF;
-      text-align: center;
-      /*!*font-family: "lato", sans-serif;*!*/
-      /*font-weight: 300;*/
-      /*font-size: 45px;*/
-      /*letter-spacing: 10px;*/
-      /*margin: -60px auto 0;*/
-      /*padding-left: 10px;*/
-      z-index: 10;
-      /*background: url("./img/zb.png") no-repeat center center;*/
-    }
-    #star-left{
-      width: 100%;
-      object-fit: cover;
-      opacity:0.9;
-      filter:alpha(opacity=90); /* 针对 IE8 以及更早的版本 */
-    }
-
-    #pic1{
-      position: absolute;
-width: 90%;
-      /*width: 1125px;*/
-      /*height: 1065px;*/
-      top: 57%;
-      left: 0;
-      right: 0;
-      color: #FFF;
-      text-align: center;
-      /*font-family: "lato", sans-serif;*/
-      font-weight: 300;
-      font-size: 45px;
-      letter-spacing: 10px;
-      margin: -60px auto 0;
-      padding-left: 10px;
-      z-index: 1;
-      /*background: url("./img/zb.png") no-repeat center center;*/
-    }
-    #zuan1{
-      position: absolute;
-      width: 95%;
-      /*width: 1125px;*/
-      /*height: 1065px;*/
-      top: 57%;
-      left: 0;
-      right: 0;
-      color: #FFF;
-      text-align: center;
-      /*font-family: "lato", sans-serif;*/
-      font-weight: 300;
-      font-size: 45px;
-      letter-spacing: 10px;
-      margin-top: -60px;
-      padding-left: 10px;
-      z-index: 10;
-    }
-    #zuan2{
-      position: absolute;
-      width: 95%;
-      /*width: 1125px;*/
-      /*height: 1065px;*/
-      top: 57%;
-      left: 0;
-      right: 0;
-      color: #FFF;
-      text-align: center;
-      /*font-family: "lato", sans-serif;*/
-      font-weight: 300;
-      font-size: 45px;
-      letter-spacing: 10px;
-      margin-top: -60px;
-      padding-left: 10px;
-      z-index: 10;
-    }
-    img{
-      width: 100%;
-      object-fit: cover;
-    }
-
-
-
-    .f2{
-      font-size: 60px;
-    }
-.moon{
-  width: 312px;
-  height: 368px;
-  position: absolute;
-  top: 0;
-  /* left: 0; */
-  right: 0;
-  background-image: url(./img/yl.png);
+        #star-pic {
+            position: absolute;
+            bottom: 0;
+            display: none;
+        }
+#t2{
+    text-align: center;
+    font-size: 40px;
+    line-height: 72px;position: absolute;
+    /*bottom: 220px;*/
+    bottom: 50px;
+    width: 100%;
 }
-  </style>
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .f2 {
+            font-size: 60px;
+        }
+
+        .moon {
+            width: 312px;
+            height: 368px;
+            position: absolute;
+            top: 0;
+            /* left: 0; */
+            right: 0;
+            background-image: url(./img/yl.png);
+        }
+    </style>
 </head>
-<body>
-
-<canvas id="terCanvas" style="display: none"></canvas>
-<!-- partial:index.partial.html -->
-<canvas id="canvas"></canvas>
-<!-- partial -->
-<img src="./img/bg.png" id="lamp"  style="display: none"/>
-<div class="star-left">
-  <img id="star-left" src="./img/wx.png">
-
-
+<body style="padding: 10px">
+<div id="t1" style="text-align: left;font-size:35px;display: block;"><span style="font-weight: bold;font-size: 50px">
+  新品上市|许愿星降临,请查收这份幸运
+</span>
+    <br>
+    <span style="color: #0a6ebd;display: inline-block;margin-right: 10px">千叶珠宝</span><span>1周前</span>
 </div>
-<!--<div class="stars"></div>-->
-<!--<div class="twinkling"></div>-->
-<div class="clouds"></div>
-<!-- partial -->
-<div class="moon"></div>
-<div id="title">
+
+
+<div style="position: relative">
+    <canvas id="terCanvas" style="display: none;object-fit: contain"></canvas>
+    <!-- partial:index.partial.html -->
+    <canvas id="canvas"></canvas>
+    <!-- partial -->
+    <img src="./img/bg.png" id="lamp" style="display: none"/>
+    <div class="star-left">
+        <img id="star-left" src="./img/wx.png">
+
+
+    </div>
+    <!--<div class="stars"></div>-->
+    <!--<div class="twinkling"></div>-->
+    <div class="clouds"></div>
+    <!--<div class="clouds" id="c2"></div>-->
+    <!-- partial -->
+    <div class="moon"></div>
+    <div id="title">
   <span>
     时光流转,夏末已至
   </span>
-  <br>
-  <span>
+        <br>
+        <span>
     天空中的 <span class="f2">繁星</span>变得越发明亮
   </span>
-  <br>
-  <span>
+        <br>
+        <span>
     优雅的点亮着整个夜空
   </span>
-</div>
-<div id="title2">
+    </div>
+    <div id="title2">
 
   <span class="f3" style="display: inline-block;margin-top: 100px">
     星扉系列
   </span>
-  <br>
-  <span>
+        <br>
+        <span>
     18k金钻石耳钉&nbsp;&nbsp;星冉
   </span>
-  <img id="star2" src="./img/wxx.png" style="
+        <img id="star2" src="./img/wxx.png" style="
     position: absolute;
     top: 0;
     left: 14%;
@@ -299,32 +385,80 @@ width: 90%;
     margin: 0 auto;
         width: 71%;
 ">
-</div>
-<div id="pic1">
-  <img id="moon2" src="./img/moon.png">
-  <!--<img id="zb" src="./img/zb.png">-->
-</div>
+    </div>
+    <div id="pic1">
+        <img id="moon2" src="./img/moon.png">
+        <!--<img id="zb" src="./img/zb.png">-->
+    </div>
 
-<div id="zuan1" class=" zoomIn fadeIn slower" style="display: none">
-  <img id="zuanshi1" src="./img/zuan1.png">
+    <div id="zuan1" class=" zoomIn fadeIn slower" style="display: none">
+        <img id="zuanshi1" src="./img/zuan1.png">
+    </div>
+    <div id="zuan2" class=" zoomIn fadeIn slower" style="display: none">
+        <img id="zuanshi2" src="./img/zuan2.png">
+    </div>
+    <div id="cloud-pic" style="">
+        <img id="cloud-2" src="./img/yun.png">
+    </div>
+    <div id="star-pic">
+        <img id="star-2" src="./img/bbg.png">
+    </div>
+
+    <div id="t2" style="    ">
+        <span>当钻石与k金璀璨交织
+</span>
+        <br><span>那片遐想星空便成了</span>
+        <br><span>祈愿的载体</span>
+        <br><span>将星与月定格指尖、耳边、颈间</span>
+        <br><span>去拥抱生命中的</span>
+        <br><span>幸福时刻</span>
+    </div>
+
 </div>
-<div id="zuan2" class=" zoomIn fadeIn slower" style="display: none" >
-  <img id="zuanshi2" src="./img/zuan2.png" >
+<!--<div class="w100" style="margin-top: -6px">-->
+    <!--<img src="./img/list/_1_01.jpg">-->
+<!--</div>-->
+<div class="w100" style="margin-top: -6px">
+    <img src="./img/list/_1_02.jpg">
+</div>
+<div class="w100" style="margin-top: -6px">
+    <img src="./img/list/_1_03.jpg">
+</div>
+<div class="w100" style="margin-top: -6px">
+    <img src="./img/list/_1_04.jpg">
+</div>
+<div class="w100" style="margin-top: -6px">
+    <img src="./img/list/_1_05.jpg">
+</div>
+<div class="w100" style="margin-top: -6px">
+    <img src="./img/list/_1_06.jpg">
+</div>
+<div class="w100" style="margin-top: -6px">
+    <img src="./img/list/_1_07.jpg">
+</div>
+<div class="w100" style="margin-top: -6px">
+    <img src="./img/list/_1_08.png">
 </div>
 </body>
 <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script >
+<script>
     "use strict";
 
     var canvas = document.getElementById('canvas'),
         ctx = canvas.getContext('2d'),
-        w = canvas.width = window.innerWidth,
-        h = canvas.height = window.innerHeight,
-
+        t1 = document.getElementById("t1"),
+        t1h = t1.clientHeight || t1.offsetHeight,
+        w = canvas.width = window.innerWidth - 20,
+        // h = canvas.height = window.innerHeight-t1h-10,
+        h = canvas.height = 2912,
+        bg1 = document.getElementById("lamp"),
         hue = 217,
         stars = [],
         count = 0,
         maxStars = 1400;
+
+
+    bg1.setAttribute("height", t1h);
 
     // Thanks @jackrugile for the performance tip! https://codepen.io/jackrugile/pen/BjBGoM
     // Cache gradient
@@ -332,7 +466,8 @@ width: 90%;
         ctx2 = canvas2.getContext('2d');
     canvas2.width = 100;
     canvas2.height = 100;
-    var half = canvas2.width/2,
+
+    var half = canvas2.width / 2,
         gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
     gradient2.addColorStop(0.025, '#fff');
     gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
@@ -361,15 +496,15 @@ width: 90%;
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    function maxOrbit(x,y) {
-        var max = Math.max(x,y),
-            diameter = Math.round(Math.sqrt(max*max + max*max));
-        return diameter/2;
+    function maxOrbit(x, y) {
+        var max = Math.max(x, y),
+            diameter = Math.round(Math.sqrt(max * max + max * max));
+        return diameter / 2;
     }
 
-    var Star = function() {
+    var Star = function () {
 
-        this.orbitRadius = random(maxOrbit(w,h));
+        this.orbitRadius = random(maxOrbit(w, h));
         this.radius = random(60, this.orbitRadius) / 12;
         this.orbitX = w / 2;
         this.orbitY = h / 2;
@@ -381,7 +516,7 @@ width: 90%;
         stars[count] = this;
     }
 
-    Star.prototype.draw = function() {
+    Star.prototype.draw = function () {
         var x = Math.sin(this.timePassed) * this.orbitRadius + this.orbitX,
             y = Math.cos(this.timePassed) * this.orbitRadius + this.orbitY,
             twinkle = random(10);
@@ -400,33 +535,44 @@ width: 90%;
     for (var i = 0; i < maxStars; i++) {
         new Star();
     }
+
     function animation() {
         ctx.globalCompositeOperation = 'source-over';
         ctx.globalAlpha = 0.8;
         ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
-        var img=document.getElementById("lamp");
-        var pat=ctx.createPattern(img,"repeat-x");
+        var img = document.getElementById("lamp");
+        var pat = ctx.createPattern(img, "repeat-x");
         // var pat=ctx.createPattern(img,direction);
-        ctx.fillStyle=pat;
+        ctx.fillStyle = pat;
         // ctx.fillStyle = '#0000ff';
-        ctx.fillRect(0, 0, w, h)
+        // ctx.fillRect(0, 0, w, h);
+
+        var img_yun = document.getElementById("star-2");
+        var pat_yun = ctx.createPattern(img_yun, "repeat");
+        // var pat=ctx.createPattern(img,direction);
+        ctx.fillStyle = pat_yun;
+        // ctx.fillStyle = '#0000ff';
+        ctx.fillRect(0, 0, w, h);
+
 
         ctx.globalCompositeOperation = 'lighter';
         for (var i = 1, l = stars.length; i < l; i++) {
             stars[i].draw();
-        };
-
+        }
+        ;
+// canvas.height=window.innerHeight;
         window.requestAnimationFrame(animation);
     }
+
     animation();
 
 
     $(document).ready(function () {
 // $("#zuan1").fadeIn(3000,"swing");
 // $("#zuan2").fadeIn(5000,"swing");
-        setTimeout("star1_fadein()",1000) ;
-        setTimeout("star2_fadein()",4000) ;
-       setTimeout("startanimated()",4000);
+        setTimeout("star1_fadein()", 1000);
+        setTimeout("star2_fadein()", 4000);
+        setTimeout("startanimated()", 4000);
     })
 
     function startanimated() {
@@ -436,23 +582,25 @@ width: 90%;
         $("#zuan1").show();
         $("#zuan2").show();
     }
-    
-  function star1_fadein() {
-      $("#star-left").fadeIn(6000,"swing",star1_fadeout)
-      // $("#star2").fadeIn(6000,"swing",star1_fadeout)
-  }
-function star1_fadeout() {
-    $("#star-left").fadeOut(6000,"swing",star1_fadein)
-    // $("#star2").fadeOut(6000,"swing",)
-}
+
+    function star1_fadein() {
+        $("#star-left").fadeIn(6000, "swing", star1_fadeout)
+        // $("#star2").fadeIn(6000,"swing",star1_fadeout)
+    }
+
+    function star1_fadeout() {
+        $("#star-left").fadeOut(6000, "swing", star1_fadein)
+        // $("#star2").fadeOut(6000,"swing",)
+    }
 
     function star2_fadein() {
         // $("#star-left").fadeIn(6000,"swing")
-        $("#star2").fadeIn(6000,"swing",star2_fadeout)
+        $("#star2").fadeIn(6000, "swing", star2_fadeout)
     }
+
     function star2_fadeout() {
         // $("#star-left").fadeOut(6000,"swing")
-        $("#star2").fadeOut(6000,"swing",star2_fadein)
+        $("#star2").fadeOut(6000, "swing", star2_fadein)
     }
 
 </script>
